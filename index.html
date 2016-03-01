@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content>
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, UI, framework, front-end, web development">
+    <meta name="author" content="Fengyuan Chen">
+    <title>Simple UI</title>
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="favicon.ico" rel="icon">
+    <link href="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.css" rel="stylesheet">
+    <link href="css/simple.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body><!--[if lt IE 8]>
+    <p class="pg-browserupgrade"><span class="container">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</span></p><![endif]--><a class="visuallyhidden focusable pg-skiplink" href="#content"><span class="container">Skip to main content</span></a>
+    <header class="pg-header" id="header">
+      <div class="container">
+        <div class="grid">
+          <div class="cell">
+            <nav class="nav nav-inline"><a class="nav-link" href="./">Simple UI</a></nav>
+          </div>
+          <div class="cell float-right">
+            <nav class="nav nav-inline"><a class="nav-link" href="https://github.com/fengyuanchen/simpleui">GitHub</a><a class="nav-link" href="http://chenfengyuan.com">About</a></nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="pg-content" id="content">
+      <div class="pg-introduction">
+        <div class="container">
+          <div class="grid">
+            <div class="cell-8 cell-desktop">
+              <h1>Simple UI</h1>
+              <p>A simple UI framework for building simple web projects.</p>
+            </div>
+            <div class="cell-4 cell-desktop">
+              <div class="card pg-carbonads float-right float-desktop">
+                <script id="_carbonads_js" src="//cdn.carbonads.com/carbon.js?zoneid=1673&amp;serve=C6AILKT&amp;placement=fengyuanchen" async></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="grid">
+          <div class="cell-3 cell-desktop push-9 push-desktop">
+            <nav class="nav nav-lined pg-sidebar"><a class="nav-link" href="#getting-started">Getting started</a><a class="nav-link" href="#typography">Typography</a><a class="nav-link" href="#grid-system">Grid system</a><a class="nav-link" href="#buttons">Buttons</a><a class="nav-link" href="#forms">Forms</a><a class="nav-link" href="#tables">Tables</a><a class="nav-link" href="#navs">Navs</a><a class="nav-link" href="#cards">Cards</a><a class="nav-link" href="#utilities">Utilities</a><a class="nav-link" href="#top"><small>Back to top</small></a></nav>
+          </div>
+          <div class="cell-9 cell-desktop pull-3 pull-desktop">
+            <section class="pg-section" id="getting-started">
+              <h1>Getting started</h1>
+              <h3>Download</h3>
+              <p>Four download options are available:</p>
+              <ul>
+                <li><a href="https://github.com/fengyuanchen/simpleui/archive/master.zip">Download the latest release.</a></li>
+                <li>Clone the repository: <code>git clone https://github.com/fengyuanchen/simpleui.git</code>.</li>
+                <li>Install with <a href="http://npmjs.org">NPM</a>: <code>npm install simpleui</code>.</li>
+                <li>Install with <a href="http://bower.org">Bower</a>: <code>bower install simpleui</code>.</li>
+              </ul>
+              <h3>Installation</h3>
+              <p>Once downloaded the source files, includes the main CSS file into your pages:</p>
+              <div class="pg-code">
+                <pre class="prettyprint">&lt;link href=&quot;/path/to/simple.css&quot; rel=&quot;stylesheet&quot;&gt;</pre>
+              </div>
+              <h3>Starter template</h3>
+              <div class="pg-code">
+                <pre class="prettyprint">&lt;!doctype html&gt;
+  &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+      &lt;meta charset=&quot;utf-8&quot;&gt;
+      &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;
+      &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/simple.min.css&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;</pre>
+              </div>
+              <h3>Browser support</h3>
+              <ul>
+                <li>Chrome (latest)</li>
+                <li>Firefox (latest)</li>
+                <li>Internet Explorer 8+</li>
+                <li>Microsoft Edge (latest)</li>
+                <li>Opera (latest)</li>
+                <li>Safari (latest)</li>
+              </ul>
+            </section>
+            <section class="pg-section" id="typography">
+              <h1>Typography</h1>
+              <h3>Headings</h3>
+              <div class="pg-demo">
+                <h1>h1. Heading</h1>
+                <h2>h2. Heading</h2>
+                <h3>h3. Heading</h3>
+                <h4>h4. Heading</h4>
+                <h5>h5. Heading</h5>
+                <h6>h6. Heading</h6>
+              </div>
+              <h3>Paragraphs</h3>
+              <div class="pg-demo">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
+              </div>
+              <h3>Blockquotes</h3>
+              <div class="pg-demo">
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </blockquote>
+              </div>
+              <h3>Horizontals</h3>
+              <div class="pg-demo">
+                <hr>
+                <hr class="dotted">
+                <hr class="dashed">
+              </div>
+              <h3>Links</h3>
+              <div class="pg-demo"><a href="#">Sample link</a><br><a href="#">Another link</a></div>
+              <h3>Lists</h3>
+              <h4>Basic</h4>
+              <div class="pg-demo">
+                <ul>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Consectetuer adipiscing elit</li>
+                  <li>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</li>
+                  <li>Ut wisi enim ad minim veniam</li>
+                  <li>Quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</li>
+                </ul>
+                <ol>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Consectetuer adipiscing elit</li>
+                  <li>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</li>
+                  <li>Ut wisi enim ad minim veniam</li>
+                  <li>Quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</li>
+                </ol>
+              </div>
+              <h4>Unstyled</h4>
+              <div class="pg-demo">
+                <ul class="unstyled">
+                  <li>Text</li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </div>
+              <h4>Inline</h4>
+              <div class="pg-demo">
+                <ul class="inline">
+                  <li>Text</li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </div>
+              <h3>Description lists</h3>
+              <div class="pg-demo">
+                <dl>
+                  <dt>Lorem ipsum</dt>
+                  <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</dd>
+                  <dt>Ut wisi enim</dt>
+                  <dd>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</dd>
+                  <dt>Duis autem</dt>
+                  <dd>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</dd>
+                </dl>
+              </div>
+              <h3>Code</h3>
+              <div class="pg-demo">
+                <p>A paragraph always was wrapped with a <code>&lt;p&gt;</code> tag.</p>
+                <pre class="prettyprint">&lt;p&gt;A paragraph always was wrapped with a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;</pre>
+              </div>
+            </section>
+            <section class="pg-section pg-grids" id="grid-system">
+              <h1>Grid system</h1>
+              <h3>Basic</h3>
+              <div class="pg-demo">
+                <div class="grid">
+                  <div class="cell">.cell</div>
+                  <div class="cell">.cell</div>
+                  <div class="cell">.cell</div>
+                  <div class="cell">.cell</div>
+                  <div class="cell">.cell</div>
+                  <div class="cell">.cell</div>
+                  <div class="cell">.cell</div>
+                  <div class="cell">.cell</div>
+                  <div class="cell">.cell</div>
+                  <div class="cell">.cell</div>
+                  <div class="cell">.cell</div>
+                  <div class="cell">.cell</div>
+                </div>
+              </div>
+              <h3>Sizing cells</h3>
+              <h4>Basic</h4>
+              <div class="pg-demo">
+                <div class="grid">
+                  <div class="cell-1">.cell-1</div>
+                  <div class="cell-1">.cell-1</div>
+                  <div class="cell-1">.cell-1</div>
+                  <div class="cell-1">.cell-1</div>
+                  <div class="cell-1">.cell-1</div>
+                  <div class="cell-1">.cell-1</div>
+                  <div class="cell-1">.cell-1</div>
+                  <div class="cell-1">.cell-1</div>
+                  <div class="cell-1">.cell-1</div>
+                  <div class="cell-1">.cell-1</div>
+                  <div class="cell-1">.cell-1</div>
+                  <div class="cell-1">.cell-1</div>
+                </div>
+                <div class="grid">
+                  <div class="cell-2">.cell-2</div>
+                  <div class="cell-2">.cell-2</div>
+                  <div class="cell-2">.cell-2</div>
+                  <div class="cell-2">.cell-2</div>
+                  <div class="cell-2">.cell-2</div>
+                  <div class="cell-2">.cell-2</div>
+                </div>
+                <div class="grid">
+                  <div class="cell-3">.cell-3</div>
+                  <div class="cell-3">.cell-3</div>
+                  <div class="cell-3">.cell-3</div>
+                  <div class="cell-3">.cell-3</div>
+                </div>
+                <div class="grid">
+                  <div class="cell-4">.cell-4</div>
+                  <div class="cell-4">.cell-4</div>
+                  <div class="cell-4">.cell-4</div>
+                </div>
+                <div class="grid">
+                  <div class="cell-6">.cell-6</div>
+                  <div class="cell-6">.cell-6</div>
+                </div>
+                <div class="grid">
+                  <div class="cell-12">.cell-12</div>
+                </div>
+              </div>
+              <h4>Responsive</h4>
+              <p>The <code>.cell-tablet</code> class make the cell floating only effective when viewport wider than 768 pixels. The <code>.cell-desktop</code> class make the cell floating only effective when viewport wider than 992 pixels.</p>
+              <div class="pg-demo">
+                <div class="grid">
+                  <div class="cell-4">.cell-4</div>
+                  <div class="cell-4">.cell-4</div>
+                  <div class="cell-4">.cell-4</div>
+                </div>
+                <div class="grid">
+                  <div class="cell-4 cell-tablet">.cell-4.cell-tablet</div>
+                  <div class="cell-4 cell-tablet">.cell-4.cell-tablet</div>
+                  <div class="cell-4 cell-tablet">.cell-4.cell-tablet</div>
+                </div>
+                <div class="grid">
+                  <div class="cell-4 cell-desktop">.cell-4.cell-desktop</div>
+                  <div class="cell-4 cell-desktop">.cell-4.cell-desktop</div>
+                  <div class="cell-4 cell-desktop">.cell-4.cell-desktop</div>
+                </div>
+              </div>
+              <h3>Offsetting cells</h3>
+              <h4>Basic</h4>
+              <div class="pg-demo">
+                <div class="grid">
+                  <div class="cell-4">.cell-4</div>
+                  <div class="cell-4">.cell-4</div>
+                  <div class="cell-4">.cell-4</div>
+                </div>
+                <div class="grid">
+                  <div class="cell-4">.cell-4</div>
+                  <div class="cell-4 offset-4">.cell-4.offset-4</div>
+                </div>
+              </div>
+              <h4>Responsive</h4>
+              <p>The <code>.offset-tablet</code> class make the cell offsetting only effective when viewport wider than 768 pixels. The <code>.offset-desktop</code> class make the cell offsetting only effective when viewport wider than 992 pixels.</p>
+              <div class="pg-demo">
+                <div class="grid">
+                  <div class="cell-4">.cell-4</div>
+                  <div class="cell-4">.cell-4</div>
+                  <div class="cell-4">.cell-4</div>
+                </div>
+                <div class="grid">
+                  <div class="cell-4">.cell-4</div>
+                  <div class="cell-4 offset-4 offset-tablet">.cell-4.offset-4.offset-tablet</div>
+                </div>
+                <div class="grid">
+                  <div class="cell-4">.cell-4</div>
+                  <div class="cell-4 offset-4 offset-desktop">.cell-4.offset-4.offset-desktop</div>
+                </div>
+              </div>
+              <h3>Ordering cells</h3>
+              <h4>Basic</h4>
+              <div class="pg-demo">
+                <div class="grid">
+                  <div class="cell-4">.cell-4</div>
+                  <div class="cell-8">.cell-8</div>
+                </div>
+                <div class="grid">
+                  <div class="cell-4 push-8">.cell-4.push-8</div>
+                  <div class="cell-8 pull-4">.cell-8.pull-4</div>
+                </div>
+              </div>
+              <h4>Responsive</h4>
+              <p>The <code>.pull-tablet</code> and <code>.push-tablet</code> classes make the cell ordering only effective when viewport wider than 768 pixels. The <code>.pull-desktop</code> and <code>.push-desktop</code> classes make the cell ordering only effective when viewport wider than 992 pixels.</p>
+              <div class="pg-demo">
+                <div class="grid">
+                  <div class="cell-4">.cell-4</div>
+                  <div class="cell-8">.cell-8</div>
+                </div>
+                <div class="grid">
+                  <div class="cell-4 push-8 push-tablet">.cell-4.push-8.push-tablet</div>
+                  <div class="cell-8 pull-4 pull-tablet">.cell-8.pull-4.pull-tablet</div>
+                </div>
+                <div class="grid">
+                  <div class="cell-4 push-8 push-desktop">.cell-4.push-8.push-desktop</div>
+                  <div class="cell-8 pull-4 pull-desktop">.cell-8.pull-4.pull-desktop</div>
+                </div>
+              </div>
+              <h3>Nesting cells</h3>
+              <div class="pg-demo">
+                <div class="grid">
+                  <div class="cell-8">.cell-8
+                    <div class="grid">
+                      <div class="cell-4">.cell-4</div>
+                      <div class="cell-4">.cell-4</div>
+                      <div class="cell-4">.cell-4</div>
+                    </div>
+                  </div>
+                  <div class="cell-4">.cell-4
+                    <div class="grid">
+                      <div class="cell-6">.cell-6</div>
+                      <div class="cell-6">.cell-6</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="pg-section" id="buttons">
+              <h1>Buttons</h1>
+              <h3>Basic</h3>
+              <div class="pg-demo"><a class="button">Link</a>
+                <button class="button">Button</button>
+                <input class="button" type="button" value="Input">
+                <input class="button" type="submit" value="Submit">
+              </div>
+              <h3>Colors</h3>
+              <div class="pg-demo">
+                <button class="button">Black</button>
+                <button class="button button-red">Red</button>
+                <button class="button button-green">Green</button>
+                <button class="button button-blue">Blue</button>
+              </div>
+              <h3>Disabled state</h3>
+              <div class="pg-demo"><a class="button disabled">Link</a>
+                <button class="button" disabled>Button</button>
+                <button class="button button-blue" disabled>Blue button</button>
+              </div>
+            </section>
+            <section class="pg-section" id="forms">
+              <h1>Forms</h1>
+              <h3>Input, select and textarea</h3>
+              <h4>Basic</h4>
+              <div class="pg-demo">
+                <p>
+                  <input class="input" type="text" placeholder="Input">
+                </p>
+                <p>
+                  <textarea class="input" placeholder="Textarea" row="3"></textarea>
+                </p>
+                <p>
+                  <select class="input">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </p>
+              </div>
+              <h4>Colors</h4>
+              <div class="pg-demo">
+                <p>
+                  <input class="input" type="text" placeholder="Black">
+                </p>
+                <p>
+                  <input class="input input-red" type="text" placeholder="Red">
+                </p>
+                <p>
+                  <input class="input input-green" type="text" placeholder="Green">
+                </p>
+                <p>
+                  <input class="input input-blue" type="text" placeholder="Blue">
+                </p>
+              </div>
+              <h4>Disabled state</h4>
+              <div class="pg-demo">
+                <p>
+                  <input class="input" type="text" disabled placeholder="Disabled input">
+                </p>
+                <p>
+                  <textarea class="input" disabled placeholder="Disabled textarea" row="3"></textarea>
+                </p>
+                <p>
+                  <select class="input" disabled>
+                    <option>Disabled select</option>
+                  </select>
+                </p>
+              </div>
+              <h4>File input</h4>
+              <div class="pg-demo">
+                <input class="input" type="file">
+              </div>
+              <h3>Radio</h3>
+              <h4>Basic</h4>
+              <div class="pg-demo">
+                <label class="radio">
+                  <input name="radio-option-1" type="radio">Lorem ipsum dolor sit amet.
+                </label>
+                <label class="radio">
+                  <input name="radio-option-1" type="radio">Consectetuer adipiscing elit.
+                </label>
+                <label class="radio">
+                  <input name="radio-option-1" type="radio">Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </label>
+              </div>
+              <h4>Inline</h4>
+              <div class="pg-demo">
+                <label class="radio radio-inline">
+                  <input name="radio-option-1" type="radio">Lorem ipsum dolor sit amet.
+                </label>
+                <label class="radio radio-inline">
+                  <input name="radio-option-1" type="radio">Consectetuer adipiscing elit.
+                </label>
+                <label class="radio radio-inline">
+                  <input name="radio-option-1" type="radio">Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </label>
+              </div>
+              <h3>Checkbox</h3>
+              <h4>Basic</h4>
+              <div class="pg-demo">
+                <label class="checkbox">
+                  <input name="radio-option-1" type="checkbox">Lorem ipsum dolor sit amet.
+                </label>
+                <label class="checkbox">
+                  <input name="radio-option-1" type="checkbox">Consectetuer adipiscing elit.
+                </label>
+                <label class="checkbox">
+                  <input name="radio-option-1" type="checkbox">Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </label>
+              </div>
+              <h4>Inline</h4>
+              <div class="pg-demo">
+                <label class="checkbox checkbox-inline">
+                  <input name="radio-option-1" type="checkbox">Lorem ipsum dolor sit amet.
+                </label>
+                <label class="checkbox checkbox-inline">
+                  <input name="radio-option-1" type="checkbox">Consectetuer adipiscing elit.
+                </label>
+                <label class="checkbox checkbox-inline">
+                  <input name="radio-option-1" type="checkbox">Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </label>
+              </div>
+              <h3>Field</h3>
+              <div class="pg-demo">
+                <div class="field">
+                  <label class="label" for="input">Label</label>
+                  <input class="input" id="input" type="text" placeholder="Input">
+                </div>
+              </div>
+              <h3>Fieldset and legend</h3>
+              <div class="pg-demo">
+                <form>
+                  <fieldset>
+                    <legend>Fieldset 1</legend>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Fieldset 2</legend>
+                  </fieldset>
+                </form>
+              </div>
+              <h3>Example usage</h3>
+              <div class="pg-demo">
+                <form class="grid">
+                  <fieldset class="cell-6 cell-tablet">
+                    <legend>Sign In</legend>
+                    <div class="field">
+                      <label class="label" for="input-username">Username or email address</label>
+                      <input class="input" id="input-username" type="text" placeholder="Username / email">
+                    </div>
+                    <div class="field">
+                      <label class="label" for="input-password">Password</label>
+                      <input class="input" id="input-password" type="password" placeholder="Password">
+                    </div>
+                    <div class="field">
+                      <label class="checkbox">
+                        <input type="checkbox">Remember me
+                      </label>
+                    </div>
+                    <button class="button" type="submit">Sign in</button>
+                  </fieldset>
+                  <fieldset class="cell-6 cell-tablet">
+                    <legend>Sign Up</legend>
+                    <div class="field">
+                      <input class="input" type="text" placeholder="Pick a username">
+                    </div>
+                    <div class="field">
+                      <input class="input" type="email" placeholder="Your email">
+                    </div>
+                    <div class="field">
+                      <input class="input" type="password" placeholder="Create a password">
+                    </div>
+                    <button class="button" type="submit">Sign up</button>
+                  </fieldset>
+                </form>
+              </div>
+            </section>
+            <section class="pg-section" id="tables">
+              <h1>Tables</h1>
+              <h3>Basic</h3>
+              <div class="pg-demo">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Heading</th>
+                      <th>Heading</th>
+                      <th>Heading</th>
+                      <th>...</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>...</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>...</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h3>Striped</h3>
+              <div class="pg-demo">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Heading</th>
+                      <th>Heading</th>
+                      <th>Heading</th>
+                      <th>...</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>...</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>...</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h3>Lined</h3>
+              <div class="pg-demo">
+                <table class="table table-lined">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Heading</th>
+                      <th>Heading</th>
+                      <th>Heading</th>
+                      <th>...</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>...</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>...</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h3>Bordered</h3>
+              <div class="pg-demo">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Heading</th>
+                      <th>Heading</th>
+                      <th>Heading</th>
+                      <th>...</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>...</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>...</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>Content</td>
+                      <td>...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h3>Responsive</h3>
+              <p>Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive</code> to make them scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.</p>
+              <div class="pg-demo">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>...</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>...</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>...</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>...</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <section class="pg-section" id="navs">
+              <h1>Navs</h1>
+              <h3>Basic</h3>
+              <div class="pg-demo">
+                <nav class="nav"><a class="nav-link">Link</a><a class="nav-link">Link</a><a class="nav-link">Link</a></nav>
+              </div>
+              <h3>Inline</h3>
+              <div class="pg-demo">
+                <nav class="nav nav-inline"><a class="nav-link">Link</a><a class="nav-link">Link</a><a class="nav-link">Link</a></nav>
+              </div>
+              <h3>Lined</h3>
+              <div class="pg-demo">
+                <nav class="nav nav-lined"><a class="nav-link">Link</a><a class="nav-link">Link</a><a class="nav-link">Link</a></nav>
+                <nav class="nav nav-inline nav-lined"><a class="nav-link">Link</a><a class="nav-link">Link</a><a class="nav-link">Link</a></nav>
+              </div>
+              <h3>Active state</h3>
+              <div class="pg-demo">
+                <nav class="nav"><a class="nav-link">Link</a><a class="nav-link active">Active link</a><a class="nav-link">Link</a></nav>
+              </div>
+              <h3>Disabled state</h3>
+              <div class="pg-demo">
+                <nav class="nav"><a class="nav-link">Link</a><a class="nav-link disabled">Disabled link</a><a class="nav-link">Link</a></nav>
+              </div>
+            </section>
+            <section class="pg-section" id="cards">
+              <h1>Cards</h1>
+              <h3>Basic</h3>
+              <div class="pg-demo">
+                <div class="card">
+                  <h5>Lorem ipsum</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p><a class="card-link" href="#">Card Link</a><a class="card-link" href="#">Another link</a>
+                </div>
+              </div>
+              <h3>Bordered</h3>
+              <div class="pg-demo">
+                <div class="card card-bordered">
+                  <h5>Lorem ipsum</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                  <button class="button" type="button">Button</button>
+                  <button class="button" type="button">Button</button>
+                </div>
+              </div>
+              <h3>Sizing</h3>
+              <div class="pg-demo">
+                <div class="grid">
+                  <div class="cell-4 cell-tablet">
+                    <div class="card">
+                      <h5>Lorem ipsum</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                      <button class="button" type="button">Button</button>
+                      <button class="button" type="button">Button</button>
+                    </div>
+                  </div>
+                  <div class="cell-4 cell-tablet">
+                    <div class="card">
+                      <h5>Duis autem</h5>
+                      <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                      <button class="button" type="button">Button</button>
+                      <button class="button" type="button">Button</button>
+                    </div>
+                  </div>
+                  <div class="cell-4 cell-tablet">
+                    <div class="card">
+                      <h5>Nam liber</h5>
+                      <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
+                      <button class="button" type="button">Button</button>
+                      <button class="button" type="button">Button</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="pg-section" id="utilities">
+              <h1>Utilities</h1>
+              <h3>Hide content</h3>
+              <p>The <code>.hidden</code> class can hide an element visually and from screen readers.</p>
+              <div class="pg-code">
+                <pre class="prettyprint">&lt;div class=&quot;hidden&quot;&gt;...&lt;/div&gt;</pre>
+              </div>
+              <h3>Hide content visually</h3>
+              <p>The <code>.visuallyhidden</code> class can hide an element only visually, but have it available for screen readers.</p>
+              <p>The optional <code>.focusable</code> class extends the <code>.visuallyhidden</code> class to allow the element to be focusable when navigated to via the keyboard.</p>
+              <div class="pg-code">
+                <pre class="prettyprint">&lt;div class=&quot;visuallyhidden&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;visuallyhidden focusable&quot;&gt;...&lt;/div&gt;</pre>
+              </div>
+              <h3>Invisible content</h3>
+              <p>The <code>.invisible</code> class can only hide an element from the visibility.</p>
+              <div class="pg-code">
+                <pre class="prettyprint">&lt;div class=&quot;invisible&quot;&gt;...&lt;/div&gt;</pre>
+              </div>
+              <h3>Clearfix</h3>
+              <p>Easily clear <code>float</code>s by adding <code>.clearfix</code> to the parent element.</p>
+              <div class="pg-code">
+                <pre class="prettyprint">&lt;div class=&quot;clearfix&quot;&gt;...&lt;/div&gt;</pre>
+              </div>
+              <h3>Floats</h3>
+              <h4>Basic</h4>
+              <p>The <code>.float-left</code> class can float an element to left and the <code>.float-right</code> class can float an element to right. The <code>!important</code> is included to avoid specificity issues.</p>
+              <div class="pg-demo">
+                <div class="clearfix">
+                  <div class="float-left">Float left</div>
+                  <div class="float-right">Float right</div>
+                </div>
+              </div>
+              <h4>Responsive</h4>
+              <p>The <code>.float-tablet</code> class make the floats only effective when viewport wider than 768 pixels. The <code>.float-desktop</code> class make the floats only effective when viewport wider than 992 pixels.</p>
+              <div class="pg-demo">
+                <div class="clearfix">
+                  <div class="float-left float-tablet">Float left when viewport wider than 768 pixels</div>
+                  <div class="float-right float-tablet">Float right when viewport wider than 768 pixels</div>
+                </div>
+                <div class="clearfix">
+                  <div class="float-left float-desktop">Float left when viewport wider than 992 pixels</div>
+                  <div class="float-right float-desktop">Float right when viewport wider than 992 pixels</div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="pg-footer" id="footer">
+      <div class="container">
+        <ul class="inline pg-footer-links">
+          <li><a href="https://github.com/fengyuanchen/simpleui">GitHub</a></li>
+          <li><a href="http://chenfengyuan.com">About</a></li>
+          <li><a href="https://fengyuanchen.github.io/donate.html">Donate</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.5.5/dist/clipboard.min.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.js"></script>
+    <script src="https://fengyuanchen.github.io/js/common.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
