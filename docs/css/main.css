@@ -1,0 +1,217 @@
+/* Basic style
+ * -------------------------------------------------------------------------- */
+
+.pg-browserupgrade,
+.pg-skiplink {
+  display: block;
+  margin-bottom: 0;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  background-color: #fcfcfc;
+  text-align: center;
+}
+
+
+/* Header */
+
+.pg-header {
+  line-height: 48px;
+}
+
+/* Content */
+
+.pg-content {
+  width: 100%;
+}
+
+.pg-introduction {
+  margin-bottom: 1.5em;
+  padding-top: 4em;
+  padding-bottom: 3em;
+
+  background-color: #fcfcfc;
+}
+
+.pg-introduction h1 {
+  font-size: 48px;
+}
+
+.pg-introduction p {
+  font-size: 24px;
+}
+
+.pg-sidebar {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.pg-sidebar.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+@media (max-width: 767px) {
+  .pg-sidebar > :last-child {
+    display: none;
+  }
+}
+
+.pg-section {
+  overflow: hidden;
+
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.pg-demo,
+.pg-code {
+  position: relative;
+
+  margin-bottom: 1em;
+}
+
+.pg-demo,
+.pg-demo + .pg-code {
+  padding-top: 1.5em;
+}
+
+.pg-demo:before,
+.pg-demo + .pg-code:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-size: 12px;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+.pg-demo:before {
+  content: "Demo";
+}
+
+.pg-demo + .pg-code:before {
+  content: "Code";
+}
+
+.pg-copy {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: .25em .5em;
+
+  font-size: 12px;
+
+  border-radius: 2px;
+  color: #999;
+
+  cursor: pointer;
+}
+
+.pg-copy:hover {
+  background-color: #0074d9;
+  color: #fff;
+}
+
+.pg-demo + .pg-code .pg-copy {
+  top: 24px;
+}
+
+.pg-grids .pg-demo .grid {
+  border-top: 1px solid #fff;
+}
+
+.pg-grids .pg-demo .grid > [class*="cell"] {
+  background-color: #eee;
+  border-left: 1px solid #fff;
+}
+
+.pg-grids .pg-demo .grid .grid > [class*="cell"] {
+  background-color: #ddd;
+}
+
+
+/* Footer */
+
+.pg-footer {
+  overflow: hidden;
+
+  margin-top: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  background-color: #fcfcfc;
+  text-align: center;
+}
+
+.pg-footer-links {
+  margin-bottom: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.pg-footer-links a {
+  color: #999;
+}
+
+
+/* Google Code Prettify
+ * -------------------------------------------------------------------------- */
+
+.prettyprint {
+  padding: 1em !important;
+  border-color: #eee !important;
+}
+
+
+/* Carbon Ads
+ * -------------------------------------------------------------------------- */
+
+.pg-carbonads {
+  max-width: 360px;
+  margin-bottom: 0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .pg-carbonads {
+    margin-top: -1em;
+  }
+}
+
+.carbon-wrap {
+  overflow: hidden;
+}
+
+.carbon-img {
+  clear: left;
+  float: left;
+  display: block;
+}
+
+.carbon-text,
+.carbon-poweredby {
+  display: block;
+  margin-left: 140px;
+}
+
+.carbon-text:hover,
+.carbon-text:focus,
+.carbon-poweredby:hover,
+.carbon-poweredby:focus {
+  text-decoration: none;
+}
+
+.carbon-text {
+  margin-bottom: .5em;
+  font-size: 14px;
+}
+
+.carbon-poweredby {
+  color: #999;
+  font-size: 12px;
+}
