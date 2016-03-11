@@ -1,8 +1,8 @@
 # Simple UI
 
-> A simple UI framework.
+> A simple UI framework for building simple web projects.
 
-- [Homepage](http://fengyuanchen.github.io/simpleui)
+- [Website](http://fengyuanchen.github.io/simpleui)
 
 
 
@@ -31,10 +31,10 @@ Four quick start options are available:
 
 - Chrome (latest)
 - Firefox (latest)
-- Internet Explorer 8+
-- Microsoft Edge (latest)
-- Opera (latest)
 - Safari (latest)
+- Opera (latest)
+- Edge (latest)
+- Internet Explorer 8+
 
 
 

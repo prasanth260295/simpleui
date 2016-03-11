@@ -4,8 +4,8 @@ html(lang="en")
     meta(charset="utf-8")
     meta(http-equiv="x-ua-compatible", content="ie=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    meta(name="description", content="")
-    meta(name="keywords", content="HTML, CSS, JS, JavaScript, UI, framework, front-end, web development")
+    meta(name="description", content="A simple UI framework for building simple web projects.")
+    meta(name="keywords", content="HTML, CSS, JS, JavaScript, UI, framework, front-end, web design, web development")
     meta(name="author", content="Fengyuan Chen")
     title Simple UI
     link(rel="shortcut icon", href="favicon.ico")
@@ -22,7 +22,7 @@ html(lang="en")
     link(href="css/main.css", rel="stylesheet")
 
   body
-    <!--[if lt IE 8]>
+    <!--[if lt IE 9]>
     p.pg-browserupgrade
       span.container You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
     <![endif]-->
@@ -39,6 +39,7 @@ html(lang="en")
           .cell.float-right
             nav.nav.nav-inline
               a.nav-link(href="https://github.com/fengyuanchen/simpleui") GitHub
+              a.nav-link(href="//fengyuanchen.github.io/") More
               a.nav-link(href="http://chenfengyuan.com") About
 
     //- Content
@@ -737,8 +738,9 @@ html(lang="en")
       .container
         ul.inline.pg-footer-links
           li: a(href="https://github.com/fengyuanchen/simpleui") GitHub
+          li: a(href="https://github.com/fengyuanchen/simpleui/releases") Releases
+          li: a(href="https://github.com/fengyuanchen/simpleui/blob/master/LICENSE") License
           li: a(href="http://chenfengyuan.com") About
-          li: a(href="https://fengyuanchen.github.io/donate.html") Donate
 
     //- Scripts
     if development
@@ -749,5 +751,5 @@ html(lang="en")
       script(src="https://code.jquery.com/jquery-1.12.1.min.js")
       script(src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.5.9/dist/clipboard.min.js")
       script(src="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.js")
-      script(src="https://fengyuanchen.github.io/js/common.js")
+      script(src="//fengyuanchen.github.io/js/common.js")
     script(src="js/main.js")

@@ -1,7 +1,7 @@
 {
   "name": "simpleui",
   "description": "A simple UI framework for building simple web projects.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "repository": "fengyuanchen/simpleui",
   "homepage": "http://fengyuanchen.github.io/simpleui",
