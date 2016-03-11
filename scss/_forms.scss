@@ -133,7 +133,7 @@ textarea {
   position: relative;
   display: block;
   min-height: $height-medium;
-  padding: 3px 0 3px $padding-large;
+  padding: .1875em 0 .1875em 1.5em;
   cursor: pointer;
   border-width: 1px 0;
   border-style: solid;
@@ -145,7 +145,7 @@ textarea {
     left: 0;
     display: block;
     height: 1px;
-    width: 14px;
+    width: .875em;
     content: " ";
   }
 
@@ -161,10 +161,10 @@ textarea {
 .radio input[type="radio"],
 .checkbox input[type="checkbox"] {
   position: absolute;
-  top: 0;
+  top: .5em;
   left: 0;
-  width: 14px;
-  height: ($height-medium - 2);
+  width: .875em;
+  height: .875em;
   margin-top: 0;
 }
 
