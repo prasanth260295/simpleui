@@ -1,6 +1,6 @@
 {
   "name": "simpleui",
-  "description": "A simple UI framework.",
+  "description": "A simple UI framework for building simple web projects.",
   "main": [
     "dist/simple.css"
   ],
@@ -13,6 +13,7 @@
     "javascript",
     "front-end",
     "web",
+    "design",
     "development"
   ],
   "homepage": "https://github.com/fengyuanchen/simpleui",
