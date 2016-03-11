@@ -141,14 +141,11 @@
 
   margin-top: 2em;
   padding-top: 1em;
-  padding-bottom: 1em;
 
   background-color: #fcfcfc;
-  text-align: center;
 }
 
 .pg-footer-links {
-  margin-bottom: 0;
   font-size: 14px;
   text-align: center;
 }
